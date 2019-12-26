@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context="com.example.afaris_1718035.MainActivity">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -15,7 +14,7 @@
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="300dp"
-          android:background="@drawable/bckgrnd">
+          android:background="@drawable/farisgambar">
 
           <ImageView
               android:layout_width="match_parent"
@@ -24,12 +23,46 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Desvianty Ayu Wahyudi"
+              android:text="Mochammad Faris"
               android:textSize="20dp"
+              android:textColor="@color/colorputih"
               android:layout_marginTop="170dp"
-              android:layout_marginLeft="90dp"
+              android:layout_marginLeft="120dp"
               android:layout_marginRight="90dp"
               android:textStyle="bold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="123dp"
+              android:layout_marginTop="224dp"
+              android:layout_marginRight="100dp"
+              android:drawableLeft="@drawable/ic_location_on_black_24dp"
+              android:text="Surabaya, East Java"
+              android:textColor="@color/colorputih"
+              android:textSize="15dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="142dp"
+              android:layout_marginTop="250dp"
+              android:layout_marginRight="100dp"
+              android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+              android:text="081232139950"
+              android:textColor="@color/colorputih"
+              android:textSize="15dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" Informatics Engineering'17 Malang"
+              android:drawableLeft="@drawable/ic_school_black_24dp"
+              android:textSize="15dp"
+              android:textColor="@color/colorputih"
+              android:layout_marginTop="197dp"
+              android:layout_marginLeft="75dp"
+              android:layout_marginRight="10dp" />
 
           <FrameLayout
               android:layout_width="wrap_content"
@@ -47,9 +80,9 @@
 
               <de.hdodenhof.circleimageview.CircleImageView
                   android:id="@+id/profile_image"
-                  android:layout_width="100dp"
-                  android:layout_height="100dp"
-                  android:src="@drawable/profile" />
+                  android:layout_width="110dp"
+                  android:layout_height="110dp"
+                  android:src="@drawable/profilfaris" />
           </FrameLayout>
 
       </RelativeLayout>
@@ -62,8 +95,8 @@
               android:id="@+id/tv_like"
               android:layout_width="320dp"
               android:layout_height="wrap_content"
-              android:text="Likes"
-              android:drawableLeft="@drawable/ic_favorite_black_24dp"
+              android:text="@string/likes"
+              android:drawableLeft="@drawable/ic_photo_library_black_24dp"
               android:textStyle="bold"
               android:textSize="25dp"
               android:drawablePadding="10dp"
@@ -82,7 +115,7 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="999"
+              android:text="0"
               android:textStyle="bold"
               android:textSize="25sp"
               android:layout_toRightOf="@+id/tv_like"
@@ -97,9 +130,9 @@
               android:id="@+id/tv_save"
               android:layout_width="320dp"
               android:layout_height="wrap_content"
-              android:text="Save"
+              android:text="@string/save"
               android:textSize="25dp"
-              android:drawableLeft="@drawable/ic_bookmark_black_24dp"
+              android:drawableLeft="@drawable/ic_android_black_24dp"
               android:textStyle="bold"
               android:drawablePadding="10dp"
               android:layout_marginTop="20sp"
@@ -116,7 +149,7 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="700"
+              android:text="1"
               android:textStyle="bold"
               android:textSize="25sp"
               android:layout_toRightOf="@+id/tv_save"
@@ -131,9 +164,9 @@
               android:id="@+id/tv_photo"
               android:layout_width="320dp"
               android:layout_height="wrap_content"
-              android:text="Galery"
+              android:text="@string/gallery"
               android:textSize="25dp"
-              android:drawableLeft="@drawable/ic_photo_library_black_24dp"
+              android:drawableLeft="@drawable/ic_android_black_24dp"
               android:textStyle="bold"
               android:drawablePadding="10dp"
               android:layout_marginTop="20sp"
@@ -150,7 +183,7 @@
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="250"
+              android:text="10Jt"
               android:textStyle="bold"
               android:textSize="25sp"
               android:layout_toRightOf="@+id/tv_photo"
@@ -160,16 +193,34 @@
 
       <RelativeLayout
           android:layout_width="match_parent"
-          android:layout_height="match_parent">
+          android:layout_height="89dp">
+
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_centerHorizontal="true"
-              android:layout_alignParentBottom="true"
-              android:drawableStart="@drawable/add"/>
+              android:drawableStart="@drawable/add" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="234dp"
+              android:drawableStart="@drawable/add2" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="133dp"
+              android:drawableStart="@drawable/add2" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="31dp"
+              android:drawableStart="@drawable/add2" />
       </RelativeLayout>
-
-
   </LinearLayout>
 
 
